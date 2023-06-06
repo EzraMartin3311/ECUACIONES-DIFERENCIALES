@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ecuaciones Diferenciales</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<nav>
+		<ul class="menu-horizontal">
+			<li><a href="#ed">Ecuaciones Diferenciales</a></li>
+			<li>
+				<a>Variación de parametros</a>
+				<ul class="menu-vertical">
+					<li><a href="#var">Explicación</a></li>
+					<li><a href="#prob1">Ejemplos</a></li>
+					<li><a href="#vid1">Videos</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Cauchy Euler</a>
+				<ul class="menu-vertical">
+					<li><a href="#Cauchy-Euler">Explicación</a></li>
+					<li><a href="#prob2">Ejemplos</a></li>
+					<li><a href="#vid2">Videos</a></li>
+
+				</ul>
+			</li>
+
+		</ul>
+	</nav>
+    <br>
+    <section class="tittle">
+        <div class="title">
+            <a id="ed" >Ecuaciones Diferenciales</a>
+        </div>
+    </section>
+    <section class="home">
+        <div class="in-flex">
+                Las ecuaciones diferenciales son una parte fundamental de las matemáticas y se utilizan para describir relaciones entre una función y sus derivadas. 
+                Estas ecuaciones se emplean en una amplia gama de disciplinas científicas y de ingeniería para modelar fenómenos y resolver problemas en los que intervienen 
+                variables que cambian continuamente.
+                <br>
+                Existen diferentes tipos de ecuaciones diferenciales, pero las más comunes son las ecuaciones diferenciales ordinarias (EDO) y las ecuaciones diferenciales parciales 
+                (EDP).
+                <br>
+                Las ecuaciones diferenciales ordinarias (EDO) involucran una función desconocida de una sola variable independiente y sus derivadas con respecto a esa variable. 
+                e clasifican según el orden de la derivada más alta presente en la ecuación. Por ejemplo, una EDO de primer orden solo contiene derivadas de primer orden, mientras que 
+                una EDO de segundo orden incluye derivadas de segundo orden.
+                <br>
+                Las ecuaciones diferenciales parciales (EDP) involucran funciones desconocidas de varias variables independientes y sus derivadas parciales con respecto a esas variables. 
+                Estas ecuaciones son más complejas que las EDO, ya que pueden tener múltiples variables independientes y pueden requerir técnicas matemáticas más avanzadas para su resolución.
+                <br>
+                Para resolver ecuaciones diferenciales, se utilizan diferentes métodos y técnicas, que dependen del tipo de ecuación y sus propiedades. Algunos de los métodos comunes para resolver 
+                ecuaciones diferenciales incluyen:
+                <br>
+                <br>
+                1.	Métodos analíticos: Estos métodos implican encontrar una solución exacta de la ecuación diferencial mediante técnicas algebraicas y análisis matemático.
+                <br><br>
+                2.	Métodos numéricos: Estos métodos se utilizan cuando no es posible encontrar una solución analítica exacta. Los métodos numéricos aproximan la solución mediante el uso de cálculos numéricos y algoritmos.
+                <br><br>
+                3.	Transformada de Laplace: La transformada de Laplace es una herramienta matemática que se utiliza para convertir una ecuación diferencial en una ecuación algebraica más fácil de resolver. Una vez que se encuentra la solución en el dominio de Laplace, se realiza una inversión para obtener la solución en el dominio original.
+            </div>
+        <div class="in-flex">
+            <div>
+                4.	Método de separación de variables: Este método se utiliza para resolver ecuaciones diferenciales parciales, en particular, las que son lineales y tienen coeficientes constantes. Consiste en suponer que la solución es un producto de funciones que solo dependen de una variable cada una, y luego se procede a separar las variables y resolver las ecuaciones resultantes.
+                <br><br>
+                5.	Método de elementos finitos: Este método se utiliza para resolver ecuaciones diferenciales parciales en dominios complejos. Consiste en aproximar la solución mediante una combinación lineal de funciones definidas localmente en pequeñas regiones del dominio, llamadas elementos finitos.</div>
+            <div>
+                Estos son solo algunos de los conceptos y métodos básicos relacionados con las ecuaciones diferenciales. Esta área de las matemáticas es amplia y profunda, y existen muchas ramas y técnicas especializadas en su estudio y aplicación.
+                <br><br>
+                Ejemplo:
+                𝑦′′−4𝑦=8𝑒^2𝑥
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="tittle">
+        <div class="title">
+            <a id="var" >Variación de parametros</a>
+        </div>
+    </section>
+    <section class="home">
+        <div class="in-flex">
+            El método de variación de parámetros es una técnica utilizada para resolver ecuaciones diferenciales lineales de segundo orden no homogéneas. Este método es una extensión del método de coeficientes indeterminados, que se utiliza para resolver ecuaciones diferenciales lineales homogéneas.
+            <br>
+            El procedimiento básico del método de variación de parámetros implica los siguientes pasos:
+            <br><br>
+            Supongamos que tenemos una ecuación diferencial de segundo orden no homogénea de la forma:
+            <br><br>y''(x) + p(x)y'(x) + q(x)y(x) = r(x)
+            <br><br>Primero, encontramos la solución general de la ecuación homogénea asociada:
+            <br><br>y''(x) + p(x)y'(x) + q(x)y(x) = 0
+            <br><br>Denotamos esta solución como y^h(x).
+            <br><br>Luego, buscamos una solución particular de la ecuación no homogénea en la forma de una función desconocida multiplicada por una función auxiliar. Es decir, asumimos que la solución particular tiene la forma:
+            <br><br>y^p(x) = u(x)y^1(x) + v(x)y^2(x)
+            <br><br>donde y_1(x) y y_2(x) son dos soluciones linealmente independientes de la ecuación homogénea asociada (y^h(x)).
+            <br><br>Calculamos las derivadas de y^p(x):
+            <br><br>y^p'(x) = u'(x)y_1(x) + u(x)y_1'(x) + v'(x)y_2(x) + v(x)y_2'(x)
+            
+        </div>
+        <div class="in-flex">
+            <div>
+            y^p''(x) = u''(x)y_1(x) + 2u'(x)y_1'(x) + u(x)y_1''(x) + v''(x)y_2(x) + 2v'(x)y_2'(x) + v(x)y_2''(x)
+            <br><br>Sustituimos las expresiones de y^p(x), y^p'(x) y y^p''(x) en la ecuación diferencial no homogénea original. Luego, simplificamos y agrupamos los términos que contienen las funciones auxiliares (u(x) y v(x)).
+            <br><br> Igualamos los términos que contienen las mismas funciones auxiliares a cero y resolvemos el sistema resultante de ecuaciones lineales para encontrar las funciones auxiliares u(x) y v(x).
+            <br><br>Una vez que se obtienen las funciones auxiliares, se sustituyen en la solución particular:
+            
+            </div>
+            <div>
+                y^p(x) = u(x)y^1(x) + v(x)y^2(x)
+                <br><br>Finalmente, la solución general de la ecuación diferencial no homogénea es la suma de la solución homogénea y la solución particular:
+                <br><br>y(x) = y^h(x) + y^p(x)
+
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <a id="prob1"><div class="wrapper">
+        <div class="slider" id="slider">
+          <ul class="slides">
+            <li class="slide" id="slide1">
+              <a href="#">
+                <img src="var1.jpg" alt="photo 1">
+              </a>
+            </li>
+            <li class="slide" id="slide2">
+              <a href="#">
+                <img src="var2.jpg" alt="photo 2">
+              </a>
+            </li>
+            <li class="slide" id="slide3">
+              <a href="#">
+                <img src="var1.jpg" alt="photo 3">
+              </a>
+            </li>
+            <li class="slide" id="slide4">
+              <a href="#">
+                <img src="var2.jpg" alt="photo 4">
+              </a>
+            </li>
+            <li class="slide" id="slide5">
+              <a href="#">
+                 <img src="var1.jpg" alt="photo 5">
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#">
+                <img src="var2.jpg" alt="photo 1">
+              </a>
+            </li>
+          </ul>
+          <ul class="slider-controler">
+            <li><a href="#slide1">&bullet;</a></li>
+            <li><a href="#slide2">&bullet;</a></li>
+            <li><a href="#slide3">&bullet;</a></li>
+            <li><a href="#slide4">&bullet;</a></li>
+            <li><a href="#slide5">&bullet;</a></li>
+          </ul>
+        </div>
+      </div>
+      </a>
+      <br>
+      <div class="video">
+      <a id="vid1"><video controls src="var_par.mp4"></video></a>
+      </div>>
+      <br><br><br>
+      <section class="tittle">
+        <div class="title">
+            <a id="Cauchy-Euler">Cauchy Euler</a>
+        </div>
+    </section>
+    <section class="home">
+        <div class="in-flex">
+          El método de Cauchy-Euler, también conocido como el método de los operadores de diferencias, es una técnica utilizada para resolver ecuaciones diferenciales lineales de segundo orden con coeficientes constantes. Este método es especialmente útil cuando la ecuación diferencial puede ser escrita en forma estándar como:
+          <br><br>ax^2y'' + bxy' + cy = 0
+          <br><br>donde a, b y c son constantes y y representa la función desconocida de x.
+          <br><br>El proceso básico para resolver una ecuación diferencial de Cauchy-Euler es el siguiente:
+          <br><br>Supongamos que la solución de la ecuación diferencial tiene la forma y(x) = x^r, donde r es un exponente desconocido.
+          <br><br>Derivamos dos veces y(x) para obtener y' y y'':
+          <br><br>y' = rx^(r-1)
+          <br><br>y'' = r(r-1)x^(r-2)
+          <br><br>Sustituimos y, y' y y'' en la ecuación diferencial y simplificamos:
+          <br><br>a(r(r-1)x^(r-2)) + b(rx^(r-1)) + c(x^r) = 0
+          <br><br>Multiplicamos a través por x^(2-r) para eliminar las potencias de x y obtener una ecuación polinómica:
+          <br><br>ar(r-1) + br + c = 0
+          <br><br>La ecuación polinómica obtenida en el paso anterior es conocida como la ecuación característica. Resolvemos esta ecuación para encontrar los valores de r.
+          
+            
+        </div>
+        <div class="in-flex">
+            <div>
+              Después de encontrar los valores de r, construimos las soluciones generales correspondientes:
+              <br><br>Si r es un número real y único, entonces la solución general es y(x) = C1x^r, donde C1 es una constante arbitraria.
+              <br><br>Si r1 y r2 son raíces distintas y reales, entonces la solución general es y(x) = C1x^r1 + C2x^r2, donde C1 y C2 son constantes arbitrarias.
+              <br><br>Si r1 y r2 son raíces reales repetidas, entonces la solución general es y(x) = C1x^r1 + C2x^r1 ln(x), donde C1 y C2 son constantes arbitrarias.
+              
+            </div>
+            <div>
+              Si r1 y r2 son raíces complejas conjugadas, entonces la solución general es y(x) = C1x^Re(r1) [cos(Im(r1) ln(x)) + C2x^Re(r1) [sin(Im(r1) ln(x))], donde C1 y C2 son constantes arbitrarias, Re(r1) es la parte real de r1 e Im(r1) es la parte imaginaria de r1.
+              <br>El método de Cauchy-Euler proporciona una forma sistemática de encontrar soluciones a ecuaciones diferenciales de segundo orden con coeficientes constantes. Es importante tener en cuenta que este método se aplica cuando la ecuación diferencial puede ser escrita en forma estándar y no todas las ecuaciones diferenciales de segundo orden cumplen con esta forma.
+              
+
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <a id="prob2"><div class="wrapper">
+        <div class="slider" id="slider">
+          <ul class="slides">
+            <li class="slide" id="slide1">
+              <a href="#">
+                <img src="cauchy1.jpg" alt="photo 1">
+              </a>
+            </li>
+            <li class="slide" id="slide2">
+              <a href="#">
+                <img src="cauchy1.jpg" alt="photo 2">
+              </a>
+            </li>
+            <li class="slide" id="slide3">
+              <a href="#">
+                <img src="cauchy1.jpg" alt="photo 3">
+              </a>
+            </li>
+            <li class="slide" id="slide4">
+              <a href="#">
+                <img src="cauchy1.jpg" alt="photo 4">
+              </a>
+            </li>
+            <li class="slide" id="slide5">
+              <a href="#">
+                 <img src="cauchy1.jpg" alt="photo 5">
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#">
+                <img src="cauchy1.jpg" alt="photo 1">
+              </a>
+            </li>
+          </ul>
+          <ul class="slider-controler">
+            <li><a href="#slide1">&bullet;</a></li>
+            <li><a href="#slide2">&bullet;</a></li>
+            <li><a href="#slide3">&bullet;</a></li>
+            <li><a href="#slide4">&bullet;</a></li>
+            <li><a href="#slide5">&bullet;</a></li>
+          </ul>
+        </div>
+      </div>
+    </a>
+      <br>
+      <div class="video">
+      <a id="vid2"><video controls src="Cauchy_Euler.mp4"></video></a>
+      </div>>
+      <br><br><br>
+</body>
+</html>
